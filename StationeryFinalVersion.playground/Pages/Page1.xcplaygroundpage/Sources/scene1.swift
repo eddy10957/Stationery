@@ -77,7 +77,7 @@ public struct scene1: View{
                                 Text("Reporter:")
                                     .font(.subheadline)
                                     .bold()
-                                Text("Since the news broke out, rivers of pencils reversed in the streets celebrating what they call a New Era.")
+                                Text("Since the news broke out, rivers of pencils poured into the streets celebrating what they call a New Era.")
                                     .foregroundColor(Color.black)
                                     .frame(width: 380)
                                     .onAppear(perform:{

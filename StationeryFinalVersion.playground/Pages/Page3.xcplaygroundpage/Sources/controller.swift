@@ -12,6 +12,8 @@ public struct controller: View {
         }
         else if(step == 7){
             scene7($step)
+        } else if(step == 8) {
+            scene7Bis($step)
         }
         else{
             Text("Click on Next in Page3 to continue the story.")

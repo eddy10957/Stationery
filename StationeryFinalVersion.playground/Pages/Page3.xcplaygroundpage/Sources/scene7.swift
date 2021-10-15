@@ -21,30 +21,12 @@ public struct scene7: View{
                 .scaledToFill()
                 .offset(x: toggleAnimationX ? -10:0)
             
-            Image(uiImage: UIImage(named: "Mano.png")!)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 400, height: 400)
-                .onAppear(){
-                    withAnimation(Animation.easeInOut(duration: 0.5)
-                                    .repeatCount(10)){
-                        fadeInOut.toggle()
-                    }
-                }.opacity(fadeInOut ? 0 : 1)
-                .offset(y:-200)
-            
             Image(uiImage: UIImage(named: "GlassSx.png")!)
                 .resizable()
                 .scaledToFill()
                 .offset(x: toggleAnimationX ? 10:0)
-                .onTapGesture {
-                    withAnimation(Animation.easeInOut(duration: 0.4)
-                                    .repeatForever()){
-                        toggleAnimationX.toggle()
-                    }
-                }
+        
             ZStack{
-                
                 RoundedRectangle(cornerRadius: 20)
                     .fill(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .offset(y:250)

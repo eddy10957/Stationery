@@ -9,6 +9,7 @@ public struct scene2: View{
     @State var toggleAnimationX = false
     @State var fadeInOut = false
     @State var scale = 0.75
+    
 
     
     public init(_ step: Binding<Int>){
@@ -29,19 +30,7 @@ public struct scene2: View{
                 .resizable()
                 .scaledToFill()
                 .offset(y: toggleAnimationY ? -35 : 0)
-            
-            Image(uiImage: UIImage(named: "Mano.png")!)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 400, height: 400)
-                .onAppear(){
-                    withAnimation(Animation.easeInOut(duration: 0.5)
-                                    .repeatCount(10)){
-                        fadeInOut.toggle()
-                    }
-                }.opacity(fadeInOut ? 0 : 1)
-                .offset(y:-200)
-            
+
             Image(uiImage: UIImage(named: "pencilFront.png")!)
                 .resizable()
                 .scaledToFill()
@@ -78,9 +67,6 @@ public struct scene2: View{
                     Text("Finally our words cannot be erased, we desire an equal society were every right must be respected!")
                         .foregroundColor(Color.black)
                         .frame(width: 380)
-                        .onAppear(perform:{
-                            playSounds("cheering.mp3")
-                        })
                 }
                 .offset(y:250)
                 

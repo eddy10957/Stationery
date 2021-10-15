@@ -23,7 +23,7 @@ public struct scene4: View{
             Image(uiImage: UIImage(named: "Stand.png")!)
                 .resizable()
                 .scaledToFill()
-            
+            if step == 5 {
             Image(uiImage: UIImage(named: "Mano.png")!)
                 .resizable()
                 .scaledToFit()
@@ -36,7 +36,7 @@ public struct scene4: View{
                     }
                 }.opacity(fadeInOut ? 0 : 1)
                 .offset(x:100,y:-160)
-            
+            }
             Image(uiImage: UIImage(named: "Mustachefull.png")!)
                 .resizable()
                 .scaledToFit()

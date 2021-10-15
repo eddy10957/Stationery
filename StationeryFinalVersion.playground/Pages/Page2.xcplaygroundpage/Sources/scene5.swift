@@ -16,29 +16,6 @@ public struct scene5: View{
             Image(uiImage: UIImage(named: "Background5.png")!)
                 .resizable()
                 .scaledToFill()
-            
-            Image(uiImage: UIImage(named: "Mano.png")!)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 400, height: 400)
-                .onAppear(){
-                    withAnimation(Animation.easeInOut(duration: 0.5)
-                                    .repeatCount(10)){
-                        fadeInOut1.toggle()
-                    }
-                }.opacity(fadeInOut1 ? 0 : 1)
-                .offset(y:-200)
-            
-            Image(uiImage: UIImage(named: "muzleFlash.png")!)
-                .resizable()
-                .scaledToFill()
-                .onTapGesture {
-                    withAnimation(Animation.easeInOut(duration: 0.3)
-                                    .repeatForever()){
-                        fadeInOut.toggle()
-                    }
-                    playSounds("gunshots.mp3")
-                }.opacity(fadeInOut ? 0 : 1)
         
         ZStack{
             

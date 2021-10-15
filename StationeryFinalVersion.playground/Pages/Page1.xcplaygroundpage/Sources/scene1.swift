@@ -51,7 +51,7 @@ public struct scene1: View{
                                 Text("Reporter:")
                                     .font(.subheadline)
                                     .bold()
-                                Text("Good evening from Stationary news, channel 5.")
+                                Text("Good evening from Stationary news, channel 1.")
                                     .foregroundColor(Color.black)
                                     .frame(width: 380)
                                     .onAppear(perform:{

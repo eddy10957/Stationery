@@ -48,10 +48,10 @@ public struct scene9: View{
                         .scaledToFill()
                         .offset(x: xAxis)
                         .onTapGesture {
-                            withAnimation(Animation.easeInOut(duration: 3)){
+                            withAnimation(Animation.easeInOut(duration: 10)){
                                 xAxis = -600
                                 playSounds("March2.mp3")
-                                DispatchQueue.main.asyncAfter(deadline: .now() + 3){
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 5){
                                     page += 1
                                 }
                             }

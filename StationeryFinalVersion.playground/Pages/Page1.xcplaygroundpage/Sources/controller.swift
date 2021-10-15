@@ -16,6 +16,9 @@ public struct controller: View {
         else if(step == 2){
             scene2($step)
         }
+        else if(step == 3){
+            scene2Bis($step)
+        }
         else{
             Text("Click on Next in Page1 to continue the story.")
                 .onAppear(){

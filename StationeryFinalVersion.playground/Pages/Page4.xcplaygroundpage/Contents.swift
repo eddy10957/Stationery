@@ -12,4 +12,4 @@ struct story: View {
 }
 PlaygroundPage.current.setLiveView(story())
 
-//: CIA CIA <3
+//: Thanks for watching <3
